@@ -2,6 +2,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
     letter-spacing: 1.1px;
+    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -10,6 +11,56 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
     cursor: pointer !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.radio:checked ~ .content {
+    max-height: none;
+}
+
+.green {
+    color: rgb(67, 180, 152);
+}
+
+.orange {
+    color: rgb(255, 140, 102);
+}
+
+.yellow {
+    color: rgb(244, 238, 126);
+}
+
+.purple {
+    color: rgb(81, 13, 129);
 }
 
 .gen_partnerts img {
@@ -33,6 +84,10 @@ a {
 .comments-wrapper {
     background: rgb(255, 140, 102);
     width: 100vw;
+}
+
+.orange_background {
+    background: rgb(81, 13, 129) !important;
 }
 
 .comment {
@@ -652,12 +707,12 @@ nav a {
 }
 
 .bio {
-    background: rgb(255, 140, 102);
+    background: rgb(238, 229, 58);
 }
 
 .ad,
 .fp {
-    background: rgb(238, 229, 58);
+    background: rgb(255, 140, 102);
 }
 
 .ad,
@@ -793,6 +848,10 @@ nav a {
 .big-partner img {
     max-width: 160px;
     max-height: 60px;
+}
+
+.croc img {
+    max-height: 40px;
 }
 
 .little-partner img {
@@ -954,7 +1013,7 @@ nav a {
     background-color: rgb(81, 13, 129);
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1050px) {
     * {
         text-align: center;
     }

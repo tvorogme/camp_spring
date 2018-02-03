@@ -1,7 +1,7 @@
 function initialize() {
     var mapProp = {
-        center: new google.maps.LatLng(59.944625, 30.2950071),
-        zoom: 15,
+        center: new google.maps.LatLng(55.7341194,37.5880127),
+        zoom: 16,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,
@@ -11,11 +11,11 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById("map"), mapProp);
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(59.944625, 30.2950071),
+        position: new google.maps.LatLng(55.7341194,37.5880127),
         map: map
     });
     var iw1 = new google.maps.InfoWindow({
-        content: "<a class='golovinka' href='http://technopark.ifmo.ru/'>Технопарк ИТМО</a><br>Биржевая линия, 14-16"
+        content: "офис Яндекс<br>Москва, улица Льва Толстого, 16"
     });
 
     iw1.open(map, marker);
@@ -78,7 +78,7 @@ function cool(i) {
     }
 
     if (i === 2) {
-        $('.opisanie').css('background-color', 'rgb(238, 229, 58)');
+        $('.opisanie').css('background-color', 'rgb(255, 140, 102)');
         $('.robot-text').css('display', 'none');
         $('.cool_feature_text').css('display', 'none');
         $('.bio-text').css('display', 'none');
@@ -92,7 +92,7 @@ function ntcool(i) {
     $('.opisanie').css('display', 'block').css('top', '0').css('bottom', '320px').css('height', '320');
 
     if (i === 0) {
-        $('.opisanie').css('background-color', 'rgb(238, 229, 58)');
+        $('.opisanie').css('background-color', 'rgb(255, 140, 102)');
         $('.programm-text').css('display', 'none');
         $('.cool_feature_text').css('display', 'block');
         $('.bio-text').css('display', 'none');
@@ -101,7 +101,7 @@ function ntcool(i) {
          $('.blockchain-text').css('display', 'none');
     }
     if (i === 1) {
-        $('.opisanie').css('background-color', 'rgb(255, 140, 102)');
+        $('.opisanie').css('background-color', 'rgb(238, 229, 58)');
         $('.robot-text').css('display', 'none');
         $('.cool_feature_text').css('display', 'none');
         $('.bio-text').css('display', 'block');
