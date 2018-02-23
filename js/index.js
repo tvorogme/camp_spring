@@ -1,6 +1,6 @@
 function initialize() {
     var mapProp = {
-        center: new google.maps.LatLng(55.7341194,37.5880127),
+        center: new google.maps.LatLng(55.7634074,37.6222301),
         zoom: 16,
         scrollwheel: false,
         navigationControl: false,
@@ -11,11 +11,11 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById("map"), mapProp);
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.7341194,37.5880127),
+        position: new google.maps.LatLng(55.7634074,37.6222301),
         map: map
     });
     var iw1 = new google.maps.InfoWindow({
-        content: "офис Яндекс<br>Москва, улица Льва Толстого, 16"
+        content: "Московский архитектурный институт<br>Москва, улица Рождественка, 11/4"
     });
 
     iw1.open(map, marker);
