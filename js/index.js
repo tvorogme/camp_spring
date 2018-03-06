@@ -15,7 +15,7 @@ function initialize() {
         map: map
     });
     var iw1 = new google.maps.InfoWindow({
-        content: "Московский архитектурный институт<br>Москва, улица Рождественка, 11/4"
+        content: "МАРХИ<br>Москва, улица Рождественка, 11/4"
     });
 
     iw1.open(map, marker);
